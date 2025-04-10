@@ -1,3 +1,15 @@
 ##ProtGPS code is in a Jupyter Notebook script in "notebook" folder. Edit this notebook to include the correct paths to the checkpoints
 
 ##Install Jupyter in the protgps environment in anaconda3/personal
+
+conda install jupyter
+
+##navigate to the notebook folder in the protgps folder. Then, run the jupyter notebook as the following, obtain the link to open it in a local host
+
+jupyter notebook --no-browser --port=8888
+
+#open a new window and login to ssh as the following
+
+ssh -L 8888:localhost:8888 username@hpc-server-address #this allows us to open the notebook in a local host browser
+
+#Edit the Predict.ipynb notebook to include the path to the checkpoints and you can already add the protein sequence to test as well
